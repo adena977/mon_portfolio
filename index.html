@@ -67,7 +67,7 @@
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center">
                     <span
-                        class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Portfolio</span>
+                        class="text-xl font-bold bg-clip-text  bg-gradient-to-r from-primary to-secondary">Portfolio</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-center space-x-8">
@@ -124,12 +124,14 @@
                         mes projets</a>
                 </div>
                 <div class="flex gap-6 mt-8">
-                    <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-2xl hover:text-primary transition-colors"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-2xl hover:text-primary transition-colors"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/adena977" class="text-2xl hover:text-primary transition-colors"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-aden-780b55375"
+                        class="text-2xl hover:text-primary transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/AliadamAdam22" class="text-2xl hover:text-primary transition-colors"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/abel_tesfay68"
+                        class="text-2xl hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -378,36 +380,52 @@
 
             <div class="flex flex-col lg:flex-row gap-12 mt-12">
                 <div class="lg:w-1/2" data-aos="fade-right">
-                    <form class="space-y-6">
+                    <form action="https://formspree.io/f/xkgzokvn" method="POST" class="space-y-6">
+                        <!-- Champ Nom -->
                         <div class="form-control">
-                            <label class="label">
+                            <label for="name" class="label">
                                 <span class="label-text">Votre nom</span>
                             </label>
-                            <input type="text" placeholder="Nom complet" class="input input-bordered w-full" />
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet"
+                                class="input input-bordered w-full" required>
                         </div>
+
+                        <!-- Champ Email -->
                         <div class="form-control">
-                            <label class="label">
+                            <label for="email" class="label">
                                 <span class="label-text">Votre email</span>
                             </label>
-                            <input type="email" placeholder="email@exemple.com" class="input input-bordered w-full" />
+                            <input type="email" id="email" name="_replyto" placeholder="email@exemple.com"
+                                class="input input-bordered w-full" required>
                         </div>
+
+                        <!-- Champ Sujet -->
                         <div class="form-control">
-                            <label class="label">
+                            <label for="subject" class="label">
                                 <span class="label-text">Sujet</span>
                             </label>
-                            <input type="text" placeholder="Sujet du message" class="input input-bordered w-full" />
+                            <input type="text" id="subject" name="_subject" placeholder="Sujet du message"
+                                class="input input-bordered w-full" required>
                         </div>
+
+                        <!-- Champ Message -->
                         <div class="form-control">
-                            <label class="label">
+                            <label for="message" class="label">
                                 <span class="label-text">Votre message</span>
                             </label>
-                            <textarea class="textarea textarea-bordered h-32"
-                                placeholder="Détails de votre projet..."></textarea>
+                            <textarea id="message" name="message" class="textarea textarea-bordered h-32"
+                                placeholder="Détails de votre message..." required></textarea>
                         </div>
-                        <div class="form-control mt-8">
-                            <button class="btn btn-primary">Envoyer le message</button>
+
+                        <!-- Champ caché pour redirection -->
+                        <input type="hidden" name="_next" value="https://votresite.com/merci.html">
+
+                        <!-- Bouton d'envoi -->
+                        <div class="form-control mt-6">
+                            <button type="submit" class="btn btn-primary">Envoyer le message</button>
                         </div>
                     </form>
+
                 </div>
                 <div class="lg:w-1/2" data-aos="fade-left">
                     <div class="card bg-base-200 shadow-xl">
@@ -453,7 +471,7 @@
                                         class="fab fa-linkedin"></i></a>
                                 <a href="#" class="btn btn-circle btn-ghost text-2xl hover:text-primary"><i
                                         class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-circle btn-ghost text-2xl hover:text-primary"><i
+                                <a href="" class="btn btn-circle btn-ghost text-2xl hover:text-primary"><i
                                         class="fab fa-instagram"></i></a>
                             </div>
                         </div>
